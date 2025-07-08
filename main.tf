@@ -14,7 +14,7 @@ terraform {
 
 resource "aws_s3_bucket" "wong" {
 
-  bucket        = "wong-bucket"
+  bucket        = "wong-3-1-bucket"
 
   force_destroy  = true
 
