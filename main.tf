@@ -1,13 +1,13 @@
 provider "aws" {
-#   region = "ap-southeast-1"
-  region = "us-west-2"
+  region = "ap-southeast-1"
+#   region = "us-west-2"
 }
 
 terraform {
   backend "s3" {
-    bucket = "my-terraform-state-bucket"
+    bucket = "sctp-ce10-tfstate"
     key    = "terraform/state"
-    # region = "ap-southeast-1"
-    region = "us-west-2"
+    region = "ap-southeast-1"
+    # region = "us-west-2"
   }
 }
