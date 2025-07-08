@@ -1,11 +1,11 @@
 provider "aws" {
-  region = "ap-southeast-1a"
+  region = "ap-southeast-1"
 }
 
 terraform {
   backend "s3" {
     bucket = "my-terraform-state-bucket"
     key    = "terraform/state"
-    region = "ap-southeast-1a"
+    region = "ap-southeast-1"
   }
 }
