@@ -11,3 +11,11 @@ terraform {
     # region = "us-west-2"
   }
 }
+
+resource "aws_s3_bucket" "wong" {
+
+  bucket        = "wong_bucket"
+
+  force_destroy  = true
+
+}
